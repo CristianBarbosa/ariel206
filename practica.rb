@@ -9,17 +9,29 @@
     #puts "no se cumplio ninguna condicion"
 # end
 
-puts "escriba un nombre" 
-    name = gets.chomp.to_s
+#puts "escriba un nombre" 
+ #   name = gets.chomp.to_s
     
-    case name
+  #  case name
 
-when "Jose"
-    puts "#{name} es padre de Jesus."
+#when "Jose"
+    #puts "#{name} es padre de Jesus."
 
-when "Maria"
-    puts "#{name} es la madre de Jesus"
+#when "Maria"
+ #   puts "#{name} es la madre de Jesus"
 
-else puts "no se cumplio ninguna condicion"
-end 
+#else puts "no se cumplio ninguna condicion"
+#end 
 
+def unmetodo
+    puts "comienzo del metodo"
+    yield
+    yield
+puts "final del metodo"
+
+end
+
+unmetodo do
+    puts "soy un bloque que esta afuera pero me imprimo dentro del metodo"
+
+end
