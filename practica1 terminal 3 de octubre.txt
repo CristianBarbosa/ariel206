@@ -1,0 +1,260 @@
+estudiante@T1-406-15:~$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Cambiar de rama o restaurar los archivos del árbol de trabajo
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+estudiante@T1-406-15:~$ cd ~
+estudiante@T1-406-15:~$ mkdir cristian206
+estudiante@T1-406-15:~$ cd cristian206
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ touch index.html
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ nano index.html
+estudiante@T1-406-15:~/cristian206$ vim index.html
+El programa «vim» puede encontrarse en los siguientes paquetes:
+ * vim
+ * vim-gnome
+ * vim-tiny
+ * vim-athena
+ * vim-athena-py2
+ * vim-gnome-py2
+ * vim-gtk
+ * vim-gtk-py2
+ * vim-gtk3
+ * vim-gtk3-py2
+ * vim-nox
+ * vim-nox-py2
+Intente: sudo apt install <paquete seleccionado>
+estudiante@T1-406-15:~/cristian206$ git init
+Initialized empty Git repository in /home/estudiante/cristian206/.git/
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama master
+
+Commit inicial
+
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir en lo que se ha de confirmar)
+
+	index.html
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+estudiante@T1-406-15:~/cristian206$ git add . 
+estudiante@T1-406-15:~/cristian206$ git commit -am"Mi Primer commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'estudiante@T1-406-15.(none)')
+estudiante@T1-406-15:~/cristian206$ git config --global user.email "mail.@mail.com"
+estudiante@T1-406-15:~/cristian206$ git config --global user.name "estudiante"
+estudiante@T1-406-15:~/cristian206$ git commit -am"mi primer commit"
+[master (root-commit) de43ba5] mi primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+estudiante@T1-406-15:~/cristian206$ git remote add origin https://github.com/CristianBarbosa/ariel206.git
+estudiante@T1-406-15:~/cristian206$ git remote -v
+origin	https://github.com/CristianBarbosa/ariel206.git (fetch)
+origin	https://github.com/CristianBarbosa/ariel206.git (push)
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama master
+nothing to commit, working directory clean
+estudiante@T1-406-15:~/cristian206$ git push origin master
+fatal: unable to access 'https://github.com/CristianBarbosa/ariel206.git/': Could not resolve host: github.com
+estudiante@T1-406-15:~/cristian206$ sudo git push origin master
+[sudo] password for estudiante: 
+Lo sentimos, vuelva a intentarlo.
+[sudo] password for estudiante: 
+
+
+
+Lo sentimos, vuelva a intentarlo.
+[sudo] password for estudiante: 
+sudo: 3 intentos de contraseña incorrectos
+estudiante@T1-406-15:~/cristian206$ ^C
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ git remote -v
+origin	https://github.com/CristianBarbosa/ariel206.git (fetch)
+origin	https://github.com/CristianBarbosa/ariel206.git (push)
+estudiante@T1-406-15:~/cristian206$ git push origin master
+fatal: unable to access 'https://github.com/CristianBarbosa/ariel206.git/': Could not resolve host: github.com
+estudiante@T1-406-15:~/cristian206$ ^C
+estudiante@T1-406-15:~/cristian206$ ^C
+estudiante@T1-406-15:~/cristian206$ git remote add org git@github.com:CristianBarbosa/ariel206.git
+estudiante@T1-406-15:~/cristian206$ git push org master
+ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+estudiante@T1-406-15:~/cristian206$ ls
+index.html
+estudiante@T1-406-15:~/cristian206$ nano index.html 
+estudiante@T1-406-15:~/cristian206$ ls
+index.html
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama master
+Cambios no preparados para el commit:
+  (use «git add <archivo>...» para actualizar lo que se confirmará)
+  (use «git checkout -- <archivo>...» para descartar cambios en el directorio de trabajo)
+
+	modificado:    index.html
+
+no hay cambios agregados al commit (use «git add» o «git commit -a»)
+estudiante@T1-406-15:~/cristian206$ git commit -am"yolo"
+[master ba12183] yolo
+ 1 file changed, 1 insertion(+)
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama master
+nothing to commit, working directory clean
+estudiante@T1-406-15:~/cristian206$ git branch aux
+estudiante@T1-406-15:~/cristian206$ git branch 
+  aux
+* master
+estudiante@T1-406-15:~/cristian206$ git chrckout aux
+git: «chrckout» no es una orden de git. Vea «git --help»
+
+¿Se refiere a este?
+	checkout
+estudiante@T1-406-15:~/cristian206$ git checkout aux
+Switched to branch 'aux'
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+nothing to commit, working directory clean
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ clear
+[3;J
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+nothing to commit, working directory clean
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ git remote -v
+org	git@github.com:CristianBarbosa/ariel206.git (fetch)
+org	git@github.com:CristianBarbosa/ariel206.git (push)
+origin	https://github.com/CristianBarbosa/ariel206.git (fetch)
+origin	https://github.com/CristianBarbosa/ariel206.git (push)
+estudiante@T1-406-15:~/cristian206$ git push origin aux
+fatal: unable to access 'https://github.com/CristianBarbosa/ariel206.git/': Could not resolve host: github.com
+estudiante@T1-406-15:~/cristian206$ git config --global http://129.1.1.1:3128
+error: invalid key: http://129.1.1.1:3128
+estudiante@T1-406-15:~/cristian206$ git config --global http.proxy http://129.1.1.1:3128
+estudiante@T1-406-15:~/cristian206$ git push origin master
+Username for 'https://github.com': CristianBarbosa
+Password for 'https://CristianBarbosa@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 469 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/CristianBarbosa/ariel206/pull/new/master
+remote: 
+To https://github.com/CristianBarbosa/ariel206.git
+ * [new branch]      master -> master
+estudiante@T1-406-15:~/cristian206$ mkdir style.css
+estudiante@T1-406-15:~/cristian206$ touch style.css
+estudiante@T1-406-15:~/cristian206$ nano style.css
+estudiante@T1-406-15:~/cristian206$ git add .
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+	nuevo archivo: style.css
+
+estudiante@T1-406-15:~/cristian206$ git commit -am"commit de css"
+[aux ec1e716] commit de css
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 style.css
+estudiante@T1-406-15:~/cristian206$ git remote -v
+org	git@github.com:CristianBarbosa/ariel206.git (fetch)
+org	git@github.com:CristianBarbosa/ariel206.git (push)
+origin	https://github.com/CristianBarbosa/ariel206.git (fetch)
+origin	https://github.com/CristianBarbosa/ariel206.git (push)
+estudiante@T1-406-15:~/cristian206$ git log
+commit ec1e716dd3e3c2d692e0462f5c57efdc93a1a82d
+Author: estudiante <mail.@mail.com>
+Date:   Wed Oct 3 10:29:43 2018 -0500
+
+    commit de css
+
+commit ba12183b60afd79dc416969e2c26a072566ebeb6
+Author: estudiante <mail.@mail.com>
+Date:   Wed Oct 3 09:44:36 2018 -0500
+
+    yolo
+
+commit de43ba59f7965e8726ae4b266980e4e855f3c29c
+Author: estudiante <mail.@mail.com>
+Date:   Wed Oct 3 09:09:29 2018 -0500
+
+    mi primer commit
+estudiante@T1-406-15:~/cristian206$ git push origin master
+Username for 'https://github.com': CristianBarbosa
+Password for 'https://CristianBarbosa@github.com': 
+Everything up-to-date
+estudiante@T1-406-15:~/cristian206$ clear
+[3;J
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+nothing to commit, working directory clean
+estudiante@T1-406-15:~/cristian206$ git push origin maste

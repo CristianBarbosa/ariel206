@@ -1,0 +1,468 @@
+estudiante@T1-406-15:~/cristian206$ ruby -v
+ruby 2.3.1p112 (2016-04-26) [x86_64-linux-gnu]
+estudiante@T1-406-15:~/cristian206$ irb
+irb(main):001:0> 6+5
+=> 11
+irb(main):002:0> 11-5
+=> 6
+irb(main):003:0> 5*4
+=> 20
+irb(main):004:0> 12/6
+=> 2
+irb(main):005:0> 22%2
+=> 0
+irb(main):006:0> 7**2
+=> 49
+irb(main):007:0> pasaje=2300
+=> 2300
+irb(main):008:0> gaseosa=1500
+=> 1500
+irb(main):009:0> pasaje+gaseosa
+=> 3800
+irb(main):010:0> (pasaje+gaseosa)*30
+=> 114000
+irb(main):011:0> gastos=(pasaje+gaseosa)*30
+=> 114000
+irb(main):012:0> gastos
+=> 114000
+irb(main):013:0> pasaje+pasaje
+=> 4600
+irb(main):014:0> pasaje+-4600
+=> -2300
+irb(main):015:0> math.sqrt(9)
+NameError: undefined local variable or method `math' for main:Object
+	from (irb):15
+	from /usr/bin/irb:11:in `<main>'
+irb(main):016:0> Math.sqrt(9)
+=> 3.0
+irb(main):017:0> 9<10
+=> true
+irb(main):018:0> 9>10
+=> false
+irb(main):019:0> pasaje < gaseosa
+=> false
+irb(main):020:0> pasaje > gaseosa
+=> true
+irb(main):021:0> pasaje == gaseosa
+=> false
+irb(main):022:0> 9+10
+=> 19
+irb(main):023:0> 9.5+19
+=> 28.5
+irb(main):024:0> 9.5+10
+=> 19.5
+irb(main):025:0> 9/2
+=> 4
+irb(main):026:0> 9.0/2
+=> 4.5
+irb(main):027:0> diez.to_s
+NameError: undefined local variable or method `diez' for main:Object
+	from (irb):27
+	from /usr/bin/irb:11:in `<main>'
+irb(main):028:0> pasaje.to_s
+=> "2300"
+irb(main):029:0> "10".to_i
+=> 10
+irb(main):030:0> 10.to_f
+=> 10.0
+irb(main):031:0> puts hola
+NameError: undefined local variable or method `hola' for main:Object
+	from (irb):31
+	from /usr/bin/irb:11:in `<main>'
+irb(main):032:0> puts "hola"
+hola
+=> nil
+irb(main):033:0> puts (pasaje)
+2300
+=> nil
+irb(main):034:0> puts ("chao chao")
+chao chao
+=> nil
+irb(main):035:0> puts gaseosa
+1500
+=> nil
+irb(main):036:0> puts: "hola"
+SyntaxError: (irb):36: syntax error, unexpected ':', expecting end-of-input
+puts: "hola"
+     ^
+	from /usr/bin/irb:11:in `<main>'
+irb(main):037:0> puts:"imprimir#{pasaje}"
+imprimir2300
+=> nil
+irb(main):038:0> puts:"el valor del pasaje es #{pasaje}"
+el valor del pasaje es 2300
+=> nil
+irb(main):039:0> 
+irb(main):040:0* 
+irb(main):041:0* 
+irb(main):042:0* puts:"el valor del pasaje es #{pasaje
+irb(main):043:0> puts:"el valor del pasaje es #{pasaje}"
+irb(main):044:0> puts 20
+irb(main):045:0> numero =gets.chomp.to_i
+irb(main):046:0> 
+irb(main):047:0> 
+irb(main):048:0> if numero % 2 == 0
+irb(main):049:1> puts "el numero #{numero} es par."
+irb(main):050:1> elsif numero % 2 != 0
+irb(main):051:1> else puts "no se cumplio ninguna condicion"
+irb(main):052:1> end
+irb(main):053:0> ruby practica.rb
+irb(main):054:0> 
+[1]+  Detenido                irb
+estudiante@T1-406-15:~/cristian206$ irb
+irb(main):001:0> ruby practica.rb
+NameError: undefined local variable or method `practica' for main:Object
+	from (irb):1
+	from /usr/bin/irb:11:in `<main>'
+irb(main):002:0> ruby practica.rb
+NameError: undefined local variable or method `practica' for main:Object
+	from (irb):2
+	from /usr/bin/irb:11:in `<main>'
+irb(main):003:0> 
+[2]+  Detenido                irb
+estudiante@T1-406-15:~/cristian206$ clear
+[3;J
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+30
+
+el numero 0 es par.
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+Ingrese un número
+10
+el numero 10 es par.
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+practica.rb:12:in `<main>': undefined local variable or method `name' for main:Object (NameError)
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+practica.rb:13: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+    name = gets.chom.to_s
+        ^
+practica.rb:15: syntax error, unexpected keyword_when, expecting end-of-input
+when "Jose"
+    ^
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+practica.rb:13: syntax error, unexpected tIDENTIFIER, expecting keyword_when
+    name = gets.chomp.to_s
+        ^
+practica.rb:15: syntax error, unexpected keyword_when, expecting end-of-input
+when "Jose"
+    ^
+estudiante@T1-406-15:~/cristian206$ pwd
+/home/estudiante/cristian206
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+maria
+no se cumplio ninguna condicion
+estudiante@T1-406-15:~/cristian206$ 
+estudiante@T1-406-15:~/cristian206$ Maria
+No se ha encontrado la orden «Maria», quizás quiso decir:
+ La orden «maria» del paquete «maria» (universe)
+Maria: no se encontró la orden
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+Maria 
+Maria es la madre de Jesus
+estudiante@T1-406-15:~/cristian206$ ls
+index.html  practica.rb  style.css
+estudiante@T1-406-15:~/cristian206$ ls -a
+.  ..  .git  index.html  practica.rb  style.css
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+Jose
+Jose es padre de Jesus.
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+escriba un nombre
+Jose
+Jose es padre de Jesus.
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+escriba un nombre
+Maria
+Maria es la madre de Jesus
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+escriba un nombre
+pepelino
+no se cumplio ninguna condicion
+estudiante@T1-406-15:~/cristian206$ git add.
+git: «add.» no es una orden de git. Vea «git --help»
+
+¿Se refiere a este?
+	add
+estudiante@T1-406-15:~/cristian206$ git add .
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+	nuevo archivo: practica.rb
+
+estudiante@T1-406-15:~/cristian206$ git commit -am"practica ruby"
+[aux 999e6f0] practica ruby
+ 1 file changed, 25 insertions(+)
+ create mode 100644 practica.rb
+estudiante@T1-406-15:~/cristian206$ git remote -v
+org	git@github.com:CristianBarbosa/ariel206.git (fetch)
+org	git@github.com:CristianBarbosa/ariel206.git (push)
+origin	https://github.com/CristianBarbosa/ariel206.git (fetch)
+origin	https://github.com/CristianBarbosa/ariel206.git (push)
+estudiante@T1-406-15:~/cristian206$ git push origin master
+Username for 'https://github.com': CristianBarbosa
+Password for 'https://CristianBarbosa@github.com': 
+Everything up-to-date
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+nothing to commit, working directory clean
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+Cambios no preparados para el commit:
+  (use «git add <archivo>...» para actualizar lo que se confirmará)
+  (use «git checkout -- <archivo>...» para descartar cambios en el directorio de trabajo)
+
+	modificado:    practica.rb
+
+no hay cambios agregados al commit (use «git add» o «git commit -a»)
+estudiante@T1-406-15:~/cristian206$ git log
+commit 999e6f0a2959c92a2990af88290a4f0a4dc11e72
+Author: estudiante <mail.@mail.com>
+Date:   Wed Oct 3 12:38:55 2018 -0500
+
+    practica ruby
+
+commit ec1e716dd3e3c2d692e0462f5c57efdc93a1a82d
+Author: estudiante <mail.@mail.com>
+Date:   Wed Oct 3 10:29:43 2018 -0500
+
+    commit de css
+
+commit ba12183b60afd79dc416969e2c26a072566ebeb6
+Author: estudiante <mail.@mail.com>
+Date:   Wed Oct 3 09:44:36 2018 -0500
+
+    yolo
+
+commit de43ba59f7965e8726ae4b266980e4e855f3c29c
+Author: estudiante <mail.@mail.com>
+Date:   Wed Oct 3 09:09:29 2018 -0500
+
+    mi primer commit
+estudiante@T1-406-15:~/cristian206$ git push origin aux
+Username for 'https://github.com': CristianBarbosa
+Password for 'https://CristianBarbosa@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 696 bytes | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote: 
+remote: Create a pull request for 'aux' on GitHub by visiting:
+remote:      https://github.com/CristianBarbosa/ariel206/pull/new/aux
+remote: 
+To https://github.com/CristianBarbosa/ariel206.git
+ * [new branch]      aux -> aux
+estudiante@T1-406-15:~/cristian206$ clean
+No se ha encontrado la orden «clean», quizás quiso decir:
+ La orden «pclean» del paquete «pbuilder-scripts» (universe)
+ La orden «clear» del paquete «ncurses-bin» (main)
+ La orden «uclean» del paquete «svn-buildpackage» (universe)
+clean: no se encontró la orden
+estudiante@T1-406-15:~/cristian206$ clear
+[3;J
+estudiante@T1-406-15:~/cristian206$ irb
+irb(main):001:0> h = perro {"perro" => "canino", "gato" => "felino", "burro" => "asno", 12 => "docena"}
+SyntaxError: (irb):1: syntax error, unexpected =>, expecting '}'
+h = perro {"perro" => "canino", "gato" => "felino"...
+                     ^
+(irb):1: syntax error, unexpected ',', expecting '}'
+...h = perro {"perro" => "canino", "gato" => "felino", "burro" ...
+...                               ^
+(irb):1: syntax error, unexpected =>, expecting '}'
+...{"perro" => "canino", "gato" => "felino", "burro" => "asno",...
+...                               ^
+(irb):1: syntax error, unexpected ',', expecting '}'
+...> "canino", "gato" => "felino", "burro" => "asno", 12 => "do...
+...                               ^
+(irb):1: syntax error, unexpected =>, expecting '}'
+... "gato" => "felino", "burro" => "asno", 12 => "docena"}
+...                               ^
+(irb):1: syntax error, unexpected ',', expecting '}'
+...=> "felino", "burro" => "asno", 12 => "docena"}
+...                               ^
+	from /usr/bin/irb:11:in `<main>'
+irb(main):002:0> ^C
+irb(main):002:0> ^C
+irb(main):002:0> h = perro {"perro" => "canino", "gato" => "felino", "burro" => "asno", 12 => "docena"}
+SyntaxError: (irb):2: syntax error, unexpected =>, expecting '}'
+h = perro {"perro" => "canino", "gato" => "felino"...
+                     ^
+(irb):2: syntax error, unexpected ',', expecting '}'
+...h = perro {"perro" => "canino", "gato" => "felino", "burro" ...
+...                               ^
+(irb):2: syntax error, unexpected =>, expecting '}'
+...{"perro" => "canino", "gato" => "felino", "burro" => "asno",...
+...                               ^
+(irb):2: syntax error, unexpected ',', expecting '}'
+...> "canino", "gato" => "felino", "burro" => "asno", 12 => "do...
+...                               ^
+(irb):2: syntax error, unexpected =>, expecting '}'
+... "gato" => "felino", "burro" => "asno", 12 => "docena"}
+...                               ^
+(irb):2: syntax error, unexpected ',', expecting '}'
+...=> "felino", "burro" => "asno", 12 => "docena"}
+...                               ^
+	from /usr/bin/irb:11:in `<main>'
+irb(main):003:0> clear
+NameError: undefined local variable or method `clear' for main:Object
+Did you mean?  caller
+	from (irb):3
+	from /usr/bin/irb:11:in `<main>'
+irb(main):004:0> h = {"perro" => "canino", "gato" => "felino", "burro" => "asno", 12 => "docena"}
+=> {"perro"=>"canino", "gato"=>"felino", "burro"=>"asno", 12=>"docena"}
+irb(main):005:0> puts h.length # 4
+4
+=> nil
+irb(main):006:0> puts h.lenght
+NoMethodError: undefined method `lenght' for #<Hash:0x0000000282f440>
+Did you mean?  length
+	from (irb):6
+	from /usr/bin/irb:11:in `<main>'
+irb(main):007:0> puts h.length
+4
+=> nil
+irb(main):008:0> puts h["perro"]
+canino
+=> nil
+irb(main):009:0> puts h
+{"perro"=>"canino", "gato"=>"felino", "burro"=>"asno", 12=>"docena"}
+=> nil
+irb(main):010:0> puts [12]
+12
+=> nil
+irb(main):011:0> 
+[3]+  Detenido                irb
+estudiante@T1-406-15:~/cristian206$ irb
+irb(main):001:0> 
+[4]+  Detenido                irb
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+practica.rb:18:in `<main>': undefined local variable or method `name' for main:Object (NameError)
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+comienzo del metodo
+practica.rb:34:in `block in <main>': undefined method `pust' for main:Object (NoMethodError)
+Did you mean?  puts
+	from practica.rb:28:in `unmetodo'
+	from practica.rb:33:in `<main>'
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+comienzo del metodo
+practica.rb:34:in `block in <main>': undefined method `pust' for main:Object (NoMethodError)
+Did you mean?  puts
+	from practica.rb:28:in `unmetodo'
+	from practica.rb:33:in `<main>'
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+comienzo del metodo
+practica.rb:35:in `block in <main>': undefined method `pust' for main:Object (NoMethodError)
+Did you mean?  puts
+	from practica.rb:28:in `unmetodo'
+	from practica.rb:34:in `<main>'
+estudiante@T1-406-15:~/cristian206$ ruby practica.rb
+comienzo del metodo
+soy un bloque que esta afuera pero me imprimo dentro del metodo
+soy un bloque que esta afuera pero me imprimo dentro del metodo
+final del metodo
+estudiante@T1-406-15:~/cristian206$ clear
+[3;J
+estudiante@T1-406-15:~/cristian206$ irb
+irb(main):001:0> source ("banco.rb")
+banco.rb(main):002:0> class CuentaBancaria 
+banco.rb(main):003:1> 
+banco.rb(main):004:1*     def initialize nombre
+banco.rb(main):005:2>         @balance = 0
+banco.rb(main):006:2>         @nombre = nombre
+banco.rb(main):007:2>     end
+banco.rb(main):008:1> 
+banco.rb(main):009:1*     def depositar cantidad
+banco.rb(main):010:2>    @balance += cantidad 
+banco.rb(main):011:2>     end
+banco.rb(main):012:1> 
+banco.rb(main):013:1*     def retirar cantidad
+banco.rb(main):014:2>     @balance -=cantidad
+banco.rb(main):015:2>     end
+banco.rb(main):016:1> 
+banco.rb(main):017:1*     def saldo
+banco.rb(main):018:2>     puts "el saldo es: #{@balance} dolares"
+banco.rb(main):019:2>     end
+banco.rb(main):020:1> end
+=> :saldo
+banco.rb(main):021:0> 
+=> nil
+irb(main):021:0> cuenta1 = CuentaBancaria.new("Ananda")
+=> #<CuentaBancaria:0x00000000cffb98 @balance=0, @nombre="Ananda">
+irb(main):022:0> cuenta1.depositar (1044)
+=> 1044
+irb(main):023:0> cuenta1.retirar (44)
+=> 1000
+irb(main):024:0> cuenta1.saldo
+el saldo es: 1000 dolares
+=> nil
+irb(main):025:0> cuenta1.inspect
+=> "#<CuentaBancaria:0x00000000cffb98 @balance=1000, @nombre=\"Ananda\">"
+irb(main):026:0> git status
+NameError: undefined local variable or method `status' for main:Object
+	from (irb):26
+	from /usr/bin/irb:11:in `<main>'
+irb(main):027:0> 
+[5]+  Detenido                irb
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+Cambios no preparados para el commit:
+  (use «git add <archivo>...» para actualizar lo que se confirmará)
+  (use «git checkout -- <archivo>...» para descartar cambios en el directorio de trabajo)
+
+	modificado:    practica.rb
+
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir en lo que se ha de confirmar)
+
+	banco.rb
+
+no hay cambios agregados al commit (use «git add» o «git commit -a»)
+estudiante@T1-406-15:~/cristian206$ git add .
+estudiante@T1-406-15:~/cristian206$ git status
+En la rama aux
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+	nuevo archivo: banco.rb
+	modificado:    practica.rb
+
+estudiante@T1-406-15:~/cristian206$ git commit -am "Cuenta Bancaria"
+[aux 38e599a] Cuenta Bancaria
+ 2 files changed, 40 insertions(+), 9 deletions(-)
+ create mode 100644 banco.rb
+estudiante@T1-406-15:~/cristian206$ git push origin aux
+Username for 'https://github.com': CristianBarbosa
+Password for 'https://CristianBarbosa@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 692 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CristianBarbosa/ariel206.git
+   999e6f0..38e599a  aux -> aux
+estudiante@T1-406-15:~/cristian206$ clear
+[3;J
+estudiante@T1-406-15:~/cristian206$ irb
+irb(main):001:0> 10.times do |n|
+irb(main):002:1* puts n
+irb(main):003:1> end
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+=> 10
+irb(main):004:0> 
+[6]+  Detenido                irb
+estudiante@T1-406-15:~/cristian206$ rails -v
+Rails 4.2.6
+estudiante@T1-406-15:~/cristian206$ rails new practicaRails
